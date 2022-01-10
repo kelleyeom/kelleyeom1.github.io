@@ -1,0 +1,119 @@
+*{margin:0; padding:0; list-style:none; text-decoration:none;} 
+body{background:url(../img/bg.jpg) top center no-repeat; text-align:center; display: block;background-repeat: no-repeat;} 
+.clearfix:after {content: ''; display: block; clear: both;}
+
+
+#wrap{margin:0; padding:0; /*position:relative;*/ width:100%; border:none; display: inline-block; }
+
+#hr{float:left; width:204px; color:#ffffff; margin:21px 70px 0 310px;}
+	#hr img{width:100%; height:74px; border:none;}
+
+#top_menu{/*position:fixed;*/ width:100%; height:115px; text-align:center; top:0px; background:#ffffff; }
+#top_menu ul{float:right; width:20%; margin-top:23px; position:absolute; right:255px; }
+#top_menu ul li{padding:0; float:left; list-style:none; margin:auto 0;}
+#top_menu ul li a{text-decoration:none;}
+
+
+#search{
+	position:relative;
+	width: 25%;
+	height:40px;
+	float:left;
+	border:1px solid #cccccc;
+	border-radius:5px;
+	margin:36px 0 0 0;
+	/* 위 | 오른쪽 | 아래 | 왼쪽 */
+}
+#searchText{
+	width:80%;
+	height:38px;
+	border:none;
+	margin-left: 2px;
+	padding-left: 10px;
+	float: left;
+	color:#d8d8d8;
+
+	
+}
+.searchicon {
+	position:absolute; 
+	right:10px; 
+	top:4px;
+}
+
+
+#mainimg{width:1215px; height:621px; list-style:none; padding: 0; display: inline-block; }
+#mainimg a{height:620px; align-content: center; display:block; padding: 0;}
+#contents{width:100%; height:7050px; display: inline-block; margin-left:auto;}
+	
+.profile{width:100%; height:1095px; align-content: center; display:block; margin-left:auto; margin-right:auto;} 
+.profile img {height:1095px;}
+
+
+
+/* promotion 영역 */
+#section2{width:100%; height:1813px; margin:0 auto; padding:0; text-decoration:none; text-align:center;}
+
+
+#wrapper {
+	width:975px; 
+	height:1813px;
+	margin:0 auto; 
+	border-top:none; 
+	text-align:center;
+}
+#wrapper li{
+	float: left;
+	padding:0 10px 20px 10px; 
+}
+
+#wrapper li a{
+	weight:950px;
+	height:600px;
+	overflow:scroll;
+}
+
+
+
+
+/* banner 영역 */
+
+#section3{width:100%; height:1123px; margin:0 auto; padding:0; text-decoration:none;}
+.banr{float: right; margin-right:224px;}
+#section3 a{margin-top: -3px; }
+	/* INPUT 가리기 */
+	.section [id*="slide"] {display:none;}
+	
+	/* 슬라이드 영역 - max-width 크기를 조절해주면 됩니다*/
+	.section .slidewrap {max-width:612px;margin-left:352px;overflow:hidden;position:relative;float: left;}
+	.section .slidelist {white-space:nowrap;font-size:0;}
+	.section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}
+	.section .slidelist > li > a {display:block;position:relative;}
+
+	/* 좌우로 넘기는 LABEL버튼에 대한 스타일 */
+	.section .slide-control {position:absolute;top:0;left:0;z-index:10;width:100%;height:100%;}
+	.section .slide-control label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer;}
+	.section .slide-control .left {left:5px;background:url('../img/left.png') center center / 100% no-repeat;}
+	.section .slide-control .right {right:5px;background:url('../img/right.png') center center / 100% no-repeat;}
+	.section .slide-control [class*="control"] {display:none;}
+
+	/* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+	.section [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+	.section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+	.section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+	.section [id="slide04"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-300%);}
+	.section [id="slide05"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-400%);}
+	
+	/*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
+	.section [id="slide01"]:checked ~ .slidewrap .control01 {display:block;}
+	.section [id="slide02"]:checked ~ .slidewrap .control02 {display:block;}
+	.section [id="slide03"]:checked ~ .slidewrap .control03 {display:block;}
+	.section [id="slide04"]:checked ~ .slidewrap .control04 {display:block;}
+	.section [id="slide05"]:checked ~ .slidewrap .control05 {display:block;}
+
+
+/* renewal 영역 */
+
+#section9{width:1215px; height:3679px; margin:0 auto; padding:0; text-decoration:none;}
+	#section9 h2{font-size:40px; margin:0; font-family: 'Teko';font-weight: bold; }
+	#eventimg img{width:1285px; height:auto;}

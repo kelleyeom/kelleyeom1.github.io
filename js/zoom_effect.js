@@ -1,0 +1,19 @@
+jQuery(document).ready(function(){
+	$('.moniter').hover(
+		function(){
+			$(this).find('img').css({left:'200px'
+										,top:'100px'
+										,width:'100px'
+										,opacity:0
+										,display:'inline'})
+								.stop()
+								.animate({left:'17px'
+											,top:'17px'
+											,opacity:1
+											,width:'700px'}
+										,800);
+		}
+		,function(){
+			$(this).find('img').stop().fadeOut();
+		});
+});
